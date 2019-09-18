@@ -23,19 +23,19 @@
 	  		<div class="collapse navbar-collapse justify-content-end" id="nav">
 	  			<ul class="navbar-nav nav-css  justify-content-end">
 	  				<li class="nav-item-btn" >
-	  					<button ion-button class= "nav-button" ng-click="home()">Home</button>
+	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('home')">Home</button>
 	  				</li>
 	  				<li class="nav-item-btn" >
-	  					<button ion-button class= "nav-button" ng-click="home()">Services</button>
+	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('services')">Services</button>
 	  				</li>
 	  				<li class="nav-item-btn">
-	  					<button ion-button class= "nav-button" ng-click="home()">Gallary</button>
+	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('Gallary')">Gallary</button>
 	  				</li>
 	  				<li class="nav-item-btn">
-	  					<button ion-button class= "nav-button" ng-click="home()">About Us</button>
+	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('about')">About Us</button>
 	  				</li>
 	  				<li class="nav-item-btn">
-	  					<button ion-button class= "nav-button" ng-click="home()">Contact</button>
+	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('Contact')">Contact</button>
 	  				</li>
 	  			</ul>	  		
 	  		</div>
@@ -43,7 +43,7 @@
 
 	</ion-header>
 	<ion-content scroll="auto" style="top:45px" class ="body">		    	
-            <ion-slide-box  auto-play="true">
+            <ion-slide-box  auto-play="true" does-continue="true" slide-interval="3000" id="home">
                 <ion-slide>    
 	                 <div class="home-slide">
 	                 	<div class="slide-css back-img1">
@@ -84,26 +84,24 @@
                 </ion-slide>               
             </ion-slide-box>
         </div>
-        <div class="about">            	
+        <div class="about" id="about">            	
             <span class="sc-con">We Are Creative in Every civil Work </span>
             <button class="button button-assertive button-outline sc-button" >
             	<ion-ripple-effect></ion-ripple-effect>
             	Read More
             </button>  
         </div>
-        <div class="services"> 
-	        <div class="row servicerow">        	
-	        	<div class ="col col-50 col-sm-100 servicedata">
+        <div class="services parallax" id="services"> 	        
+        	<div class ="servicedata">
 	        		<h3><span>W</span>e<span> A</span>re</h3>
 	        		<div>EXPERT IN FOLLOWING WORKS
 	        		</div>
 	        	</div>
-	        	<div class ="col col-50 col-sm-100 servicedata">fewfq</div>            
-	        </div>
-	        <div class="row servicerow">
-	        	<div class ="col col-50 servicedata">sfw</div>
-	        	<div class ="col col-50 servicedata">qwf</div> 
-	        </div>
+	        	<div class ="servicedata servicedatamar">fewfq</div>          
+	        
+	        	<div class ="servicedata">sfw</div>
+	        	<div class ="servicedata servicedatamar">qwf</div> 
+	        </div>    	
 	    </div>
 
       
