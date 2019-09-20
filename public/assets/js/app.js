@@ -20,6 +20,11 @@ var app = angular.module('app', ['ionic','ui.router'])
 	    templateUrl: "assets/templates/menu.html",
 	    controller: "menuctlr"
 	})
+	.state("inovativeWorkPopup", {
+	    cache: false,
+	    url: "/inovativeWork",
+	    templateUrl: "assets/templates/inovativeWorkPopup.html"	    
+	})
    
 }]);
   

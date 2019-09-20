@@ -1,4 +1,4 @@
-<ion-view  title='demo project'>    
+<ion-view  title='demo project' >    
 	<ion-header >
 	  	<!-- <ion-nav-bar class = "bar bar-header bar-header-css">	  	
 		  	<ion-nav-buttons side="left" class="header-item nav-head" style="background-color: black;width:100">
@@ -39,11 +39,14 @@
 	  				</li>
 	  			</ul>	  		
 	  		</div>
-	  	</nav>
+	  	</nav>	  	
 
 	</ion-header>
-	<ion-content scroll="auto" style="top:45px" class ="body">		    	
-            <ion-slide-box  auto-play="true" does-continue="true" slide-interval="3000" id="home">
+	<ion-content scroll="auto" style="top:45px" class ="body">
+	<!-- <nav class="navbar navbar-expand-md navbar-light fixed-top bar-header-css" style="background-color: white !important;height: 20px;padding: 0;">
+	  		<marquee>pratiksha@gmail.com</marquee>
+	  	</nav>		 -->    	
+            <ion-slide-box  auto-play="false" does-continue="true" slide-interval="3000" id="home">
                 <ion-slide>    
 	                 <div class="home-slide">
 	                 	<div class="slide-css back-img1">
@@ -61,8 +64,8 @@
 	                 		<div class="container">
   								<div class="row">
 			                 		<div class="col z-inx">
-										<h3>Services Provided By Us</h3>
-										<p>Civil Structural Audits, RCC Structure/Building designing, Structural repairing, Tiling, Plumbing, Painting, Interior designing,construction</p>		
+										<h3 class="header2">Services Provided By Us</h3>
+										<p class="sub-header2">Civil Structural Audits, RCC Structure/Building designing, Structural repairing, Tiling, Plumbing, Painting, Interior designing,construction</p>		
 									</div>									
 									<div class="bor-des"></div>
 								</div>
@@ -75,8 +78,8 @@
 	                 <div class="home-slide">
 	                 	<div class="slide-css back-img3">
 	                 		<div class="col z-inx">
-								<h3>Here dream comes true....Specialized In...</h3>
-								<p>KDMC approved structural engineer and civil engineer contractors, PWD licence holder civil engineer, Repairing work as per structural Audit</p>
+								<h3 class="header2">Here dream comes true....Specialized In...</h3>
+								<p class="sub-header2">KDMC approved structural engineer and civil engineer contractors, PWD licence holder civil engineer, Repairing work as per structural Audit</p>
 							</div>
 							<div class="bor-des"></div>
 						</div>
@@ -85,8 +88,8 @@
             </ion-slide-box>
         </div>
         <div class="about" id="about">            	
-            <span class="sc-con">We Are Creative in Every civil Work </span>
-            <button class="button button-assertive button-outline sc-button" >
+            <span class="sc-con">Engaged With Innovative Civil Work From 35 Years...</span>
+            <button class="button button-assertive button-outline sc-button" ng-click="openModal()">
             	<ion-ripple-effect></ion-ripple-effect>
             	Read More
             </button>  
@@ -94,13 +97,21 @@
         <div class="services parallax" id="services"> 	        
         	<div class ="servicedata">
 	        		<h3><span>W</span>e<span> A</span>re</h3>
-	        		<div>EXPERT IN FOLLOWING WORKS
-	        		</div>
+	        		<div>EXPERT IN FOLLOWING WORKS</div>
 	        	</div>
-	        	<div class ="servicedata servicedatamar">fewfq</div>          
+	        	<div class ="servicedata servicedatamar">
+	        		<h3><span>W</span>ork<span> C</span>ategories</h3>
+	        		<div>WEEXECUTED WORK FOR FOLLOWING CATEGORY OF PROJECTS</div>
+	        	</div>          
 	        
-	        	<div class ="servicedata">sfw</div>
-	        	<div class ="servicedata servicedatamar">qwf</div> 
+	        	<div class ="servicedata">
+	        		<h3><span>T</span>ools<span> R</span>eqired</h3>
+	        		<div>LIST OF TOOLS, PLANTS AND EQUIPMENTS</div>
+	        	</div>
+	        	<div class ="servicedata servicedatamar">
+	        		<h3><span>C</span>ompany<span> S</span>aff</h3>
+	        		<div>Technical and Office Staff</div>
+	        	</div> 
 	        </div>    	
 	    </div>
 

@@ -1,10 +1,16 @@
 angular.module('app')
-.controller('homectlr', function($anchorScroll,$location, $scope,$state){
+.controller('homectlr', function($anchorScroll,$location, $scope,$state,$ionicPopup,$ionicModal){
 	$round = true;
 	$scope.ChangeContent = function(){
 		angular.element(document.getElementById("p1")).text("Value changed");
 		angular.element( $("ion-navicon-round").toggle("ion-navicon-cross"));
 	};
+	$scope.modal = $ionicModal.fromTemplateUrl('assets/templates/inovativeWorkPopup.html', {
+	      scope: $scope,
+	      animation: 'slide-in-up'
+	   }).then(function(modal) {
+	      $scope.modal = modal;
+	   });
 	$scope.gotoAnchor = function(section){
 		var newHash = section;
 	      if ($location.hash() !== newHash) {
@@ -17,6 +23,42 @@ angular.module('app')
 	        $anchorScroll();
    		}
 	};
+	$scope.CivilWorkSample = function(){
+		/*var myPopup = $ionicPopup.show({
+	    templateurl: 'assets/templates/inovativeWorkPopup.html',
+	    title: 'Engaged With Innovative Civil Work',
+	    subTitle: 'Please use normal things',
+	    scope: $scope,
+	    buttons: [
+	      { text: 'Cancel' },
+	      {
+	        text: '<b>Save</b>',
+	        type: 'button-positive',
+	        onTap: function(e) {
+	          if (!$scope.data.wifi) {
+	            //don't allow the user to close unless he enters wifi password
+	            e.preventDefault();
+	          } else {
+	            return $scope.data.wifi;
+	          }
+	        }
+	      }
+	    ]
+	  });
+
+	  myPopup.then(function(res) {
+	    console.log('Tapped!', res);
+	  });
+*/
+	  
+	}
+	 $scope.openModal = function() {
+      $scope.modal.show();
+   };
+	
+   $scope.closeModal = function() {
+      $scope.modal.hide();
+   };
 
 })
 .controller('menuctlr', function($scope, $stateParams) {
