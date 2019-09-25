@@ -13,8 +13,8 @@
 .sub-header{color:#fff !important;  font-family: "Times New Roman", Times, serif; text-align:center;font-size: 2vw;}
 .bor-des{border: 1vw solid rgba(0, 0, 0, 0.69);position: absolute;margin: 0 5%;width: 70%;height: 25vw;top: 5vw;opacity: 0.7;z-index: 0;}
 .about{padding: 10px;height: 80px;background-color: white}
-.sc-con{position :absolute;left: 10%;line-height: 50px;font-size: 3vw;font-style: italic;font-family: 'Lato', sans-serif;font-weight: bold;color: brown;}
-.sc-button{position :absolute; right: 10%;line-height: 50px;}
+.sc-con{position :absolute;left:3%;line-height: 50px;font-size: 3vw;font-style: italic;font-family: 'Lato', sans-serif;font-weight: bold;color: brown;width: 100%}
+.sc-button{position :absolute; right: 3%;line-height: 50px;}
 .z-inx{z-index: 1;}
 .nav-css{width: 100%;background-color: black;}
 .ion-close-round:before{font-size: 28px !important;}
@@ -29,9 +29,14 @@
 .servicedata h3 span {color: #fff;}
 .modal-backdrop {background-color: transparent;}
 /*.parallax{ background-image: url("../img/b3.jpg");max-width:100%;min-height: 100%; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}*/
+.serviceAb{color: white !important;font-size: 3.5vw;font-weight: bold;line-height: 1}
+.sd-button{color:#fff !important;background:transparent;margin-top:5%;float: left; box-shadow: 0 0 1px #ccc;-webkit-transition-duration: 1s;-webkit-transition-timing-function: ease-out; -webkit-transform-origin: 0 0;-webkit-box-shadow:0px 0px 0 0px #F44336 inset;border:1px solid #F44336;}
+.sd-button:hover{-webkit-transition-duration: 1s; box-shadow:0px 0px 0 100px #F44336 inset;-webkit-transform: scale(1);}
+.subservice{padding-top:20px}
 @media only screen and (max-width: 767px){
 .servicedata{ height:100%; width: calc(100% - 4%); margin: 2%; padding: 2%;color:white;}
 .servicedatamar{margin-left:2%;}
 .header2{font-size: 4vw;margin-bottom: 0;}
 .sub-header2{font-size: 1.6vw}
+.sc-con{width: 70%;margin-top: 10px;line-height: 2}
 }
