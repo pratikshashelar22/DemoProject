@@ -3,9 +3,9 @@ var app = angular.module('app', ['ionic','ui.router'])
 .run(['$state', '$rootScope', function ($state, $rootScope) {
 // $state.go("home");
 }])
-.config([ '$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise('/home');
-	
+.config([ '$stateProvider', '$urlRouterProvider','$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+	// $locationProvider.html5Mode(true).hashPrefix('!');
+	$urlRouterProvider.otherwise('/home');	
 	$stateProvider
 
   	.state("home", {

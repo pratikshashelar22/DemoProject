@@ -1,4 +1,4 @@
-<ion-view  title='demo project' >    
+<ion-view  title='demo project' >	
 	<ion-header >
 	  	<!-- <ion-nav-bar class = "bar bar-header bar-header-css">	  	
 		  	<ion-nav-buttons side="left" class="header-item nav-head" style="background-color: black;width:100">
@@ -45,8 +45,9 @@
 	<ion-content scroll="auto" style="top:45px" class ="body">
 	<!-- <nav class="navbar navbar-expand-md navbar-light fixed-top bar-header-css" style="background-color: white !important;height: 20px;padding: 0;">
 	  		<marquee>pratiksha@gmail.com</marquee>
-	  	</nav>		 -->    	
-            <ion-slide-box  auto-play="false" does-continue="true" slide-interval="3000" id="home">
+	  	</nav>		 --> 
+	  	<div id="home">   	
+            <ion-slide-box  auto-play="false" does-continue="true" slide-interval="3000" >
                 <ion-slide>    
 	                 <div class="home-slide">
 	                 	<div class="slide-css back-img1">
@@ -95,42 +96,99 @@
             </button>  
         </div>
         <div class="services parallax" id="services"> 	        
+    		<div class ="servicedata">
+        		<h3><span>W</span>e<span> A</span>re</h3>
+        		<div class="serviceAb">You imagine - We bring it to life.</div>
+        		<div class="subservice">Learn about us. What we are and what made us unique. The best Civil Worker in the area :)</div>
+        		<button class="button sd-button" ng-click="openModal()">
+        			Know More About Us            	
+        		</button>
+        	</div>
+        	<div class ="servicedata servicedatamar">
+        		<h3><span>W</span>ork<span> Categ</span>ories</h3>
+        		<div class="serviceAb">Feilds we specialize - Services we offer!</div>
+        		<div class="subservice">Its been a long time since the inception, here are all th services we offer.</div>
+        		<button class="button sd-button" ng-click="openModal()">
+        			Find Out More            	
+        		</button>
+        	</div>          
+        
         	<div class ="servicedata">
-	        		<h3><span>W</span>e<span> A</span>re</h3>
-	        		<div class="serviceAb">You imagine - We bring it to life.</div>
-	        		<div class="subservice">Learn about us. What we are and what made us unique. The best Civil Worker in the area :)</div>
-	        		<button class="button sd-button" ng-click="openModal()">
-            			Know More About Us            	
-            		</button>
-	        	</div>
-	        	<div class ="servicedata servicedatamar">
-	        		<h3><span>W</span>ork<span> Categ</span>ories</h3>
-	        		<div class="serviceAb">Feilds we specialize - Services we offer!</div>
-	        		<div class="subservice">Its been a long time since the inception, here are all th services we offer.</div>
-	        		<button class="button sd-button" ng-click="openModal()">
-            			Find Out More            	
-            		</button>
-	        	</div>          
-	        
-	        	<div class ="servicedata">
-	        		<h3><span>O</span>ur<span> Completed</span>  Projects</h3>
-	        		<div class="serviceAb">Happy Customers - Happy us :)</div>
-	        		<div class="subservice">Here are the projects we have completed successfully. Take a look.</div>
-	        		<button class="button sd-button" ng-click="openModal()">
-            			Find Out More            	
-            		</button>
-	        	</div>
-	        	<div class ="servicedata servicedatamar">
-	        		<h3><span>O</span>ur<span> <span>Recent<span> Projects</h3>
-	        		<div class="serviceAb">Happy Customers - Happy us :)</div>
-	        		<div class="subservice">Our recent projetcs since 2012, in and across dombivali. Take a look.</div>
-	        		<button class="button sd-button" ng-click="openModal()">
-            			Find Out More            	
-            		</button>
-	        	</div> 
-	        </div>    	
+        		<h3><span>O</span>ur <span>Completed</span>  Projects</h3>
+        		<div class="serviceAb">Happy Customers - Happy us :)</div>
+        		<div class="subservice">Here are the projects we have completed successfully. Take a look.</div>
+        		<button class="button sd-button" ng-click="openModal()">
+        			Find Out More            	
+        		</button>
+        	</div>
+        	<div class ="servicedata servicedatamar">
+        		<h3><span>O</span>ur <span>Recent</span> Projects</h3>
+        		<div class="serviceAb">Happy Customers - Happy us :)</div>
+        		<div class="subservice">Our recent projetcs since 2012, in and across dombivali. Take a look.</div>
+        		<button class="button sd-button" ng-click="openModal()">
+        			Find Out More            	
+        		</button>
+        	</div> 	          	
 	    </div>
-	    <div class="services parallax" id="Gallary"> 	
+	    <div class="video" id="video">            	
+            <div class="sc-video">Watch Live .....</div>
+            <div class="video-but1">
+	            <button class="button button-assertive button-outline bt-1" ng-click="openModal()">
+	            	<ion-ripple-effect></ion-ripple-effect>
+	            	Plumbing And Tiles
+	            </button> 
+	            <button class="button button-assertive button-outline bt-2" ng-click="openModal()">
+	            	<ion-ripple-effect></ion-ripple-effect>
+	            	Civil Repair Work
+	            </button> 
+	        </div>
+        </div>
+	    <div class="team" id="coreTeam"> 	
+	    	<div class="team-content">
+	    		<h3 class="tittle">Meet Our <span>Core </span>Team</h3>
+	    		<h4 class="tittle"><span>A team that makes sure your dream home is built well :)</span> </h4>
+	    	</div>
+	    	<div class="owner">
+	    		<div class="t1">
+					<div class="ch-item owner_img">
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front owner_img"></div>
+								<div class="ch-info-back1">
+									<!-- <ul class="social-icons">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									</ul> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<h4><span>Mr. Ashok Jadhav</span></h4>
+					<p class="team-info">Dombivali</p>
+				</div>	    		
+	    		<div class="t2">
+					<div class="ch-item owner_img2">
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front owner_img2"></div>
+								<div class="ch-info-back2">
+									<!-- <ul class="social-icons">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									</ul> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<h4><span>ER. Atul Jadhav</span></h4>
+					<p class="team-info">Dombivali</p>
+					<p class="team-info">Civil Engineer(Master in Structures)</p>
+				</div>
+	    	</div>
 	    </div>
 	    <div id="about"></div>
 	    <div id="Contact"></div>       
