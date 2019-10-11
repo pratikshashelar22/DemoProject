@@ -7,7 +7,7 @@ angular.module('app')
 	};
 	$scope.modal = $ionicModal.fromTemplateUrl('assets/templates/inovativeWorkPopup.html', {
 	      scope: $scope,
-	      animation: 'slide-in-up'
+	      animation: 'slide-in-right'
 	   }).then(function(modal) {
 	      $scope.modal = modal;
 	   });
