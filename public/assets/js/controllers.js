@@ -1,6 +1,7 @@
 angular.module('app')
-.controller('homectlr', function($anchorScroll,$location, $scope,$state,$ionicPopup,$ionicModal){
+.controller('homectlr', function($anchorScroll,$location, $scope,$state,$ionicPopup,$ionicModal,$ionicScrollDelegate,$http){
 	$round = true;
+	$scope.data={};
 	$scope.ChangeContent = function(){
 		angular.element(document.getElementById("p1")).text("Value changed");
 		angular.element( $("ion-navicon-round").toggle("ion-navicon-cross"));
@@ -12,7 +13,7 @@ angular.module('app')
 	      $scope.modal = modal;
 	   });
 	$scope.gotoAnchor = function(section){
-		var newHash = section;
+		/*var newHash = section;
 	      if ($location.hash() !== newHash) {
 	        // set the $location.hash to `newHash` and
 	        // $anchorScroll will automatically scroll to it
@@ -21,7 +22,10 @@ angular.module('app')
 	        // call $anchorScroll() explicitly,
 	        // since $location.hash hasn't changed
 	        $anchorScroll();
-   		}
+   		}*/
+   		$location.hash(section);   //set the location hash
+	    var handle = $ionicScrollDelegate.$getByHandle('myPageDelegate');
+	    handle.anchorScroll(true);
 	};
 	$scope.CivilWorkSample = function(){
 		/*var myPopup = $ionicPopup.show({
@@ -59,6 +63,9 @@ angular.module('app')
    	$scope.closeModal = function() {
       	$scope.modal.hide();
   	};
+  	$scope.sentmail = function(){
+  		
+  	}
    	$('#recipeCarousel').carousel({
 	  interval: 10000
 	})

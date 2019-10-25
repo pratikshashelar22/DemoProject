@@ -42,7 +42,7 @@
 	  	</nav>	  	
 
 	</ion-header>
-	<ion-content scroll="auto" style="top:45px" class ="body">
+	<ion-content scroll="auto" style="top:45px" class ="body" delegate-handle="myPageDelegate">
 	<!-- <nav class="navbar navbar-expand-md navbar-light fixed-top bar-header-css" style="background-color: white !important;height: 20px;padding: 0;">
 	  		<marquee>pratiksha@gmail.com</marquee>
 	  	</nav>		 --> 
@@ -88,7 +88,7 @@
                 </ion-slide>               
             </ion-slide-box>
         </div>
-        <div class="about" id="about">            	
+        <div class="about" id="about1">            	
             <span class="sc-con">Engaged With Innovative Civil Work From 35 Years...</span>
             <button class="button button-assertive button-outline sc-button" ng-click="openModal()">
             	<ion-ripple-effect></ion-ripple-effect>
@@ -143,7 +143,7 @@
 	            </button> 
 	        </div>
         </div>
-	    <div class="team" id="Contact"> 	
+	    <div class="team" id="about"> 	
 	    	<div class="team-content">
 	    		<h3 class="tittle">Meet Our <span>Core </span>Team</h3>
 	    		<h4 class="tittle"><span>A team that makes sure your dream home is built well :)</span> </h4>
@@ -271,56 +271,113 @@
 	    <div id="testimonials" class="testimonials">
 			<div class="container">
 				<h1 class="testimonialstittle">Testimonials</h1>
-				<div class="test-monials">
-					<!--//screen-gallery-->
-				<ion-slide-box  auto-play="false" does-continue="true" slide-interval="3000" >
-                <ion-slide>    
-	                 <div class="home-slide">
-	                 	<div class="slide-css">
-	                 		<div class="col z-inx">
-								<div class="test-review">
-									<div class="img-agile">
-										<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
-									</div>
-									<h5>Mr. Trambak Toke, Dombivali(w).</h5>
-									<p>I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
-								</div>
-							</div>							
-						</div>
-	                 </div>                
-                </ion-slide>
-                <ion-slide>    
-	                 <div class="home-slide">
-	                 	<div class="slide-css back-img2">
-	                 		<div class="container">
-  								<div class="row">
+				<div class="test-monials">					
+					<ion-slide-box  auto-play="true" does-continue="true" slide-interval="3000" >
+		                <ion-slide>    
+			                 <div class="home-slide">
+			                 	<div class="slide-css-test">
 			                 		<div class="col z-inx">
-										<h3 class="header2">Services Provided By Us</h3>
-										<p class="sub-header2">Civil Structural Audits, RCC Structure/Building designing, Structural repairing, Tiling, Plumbing, Painting, Interior designing,construction</p>		
-									</div>								
-									
+										<div class="test-review">
+											<div class="img-agile">
+												<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
+											</div>
+											<h4>Mr. Trambak Toke, Dombivali(w).</h4>
+											<p class="text-deco">I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
+										</div>
+									</div>							
 								</div>
-							</div>
-							
-						</div>
-	                 </div>                
-                </ion-slide>
-                <ion-slide>    
-	                 <div class="home-slide">
-	                 	<div class="slide-css back-img3">
-	                 		<div class="col z-inx">
-								<h3 class="header2">Here dream comes true....Specialized In...</h3>
-								<p class="sub-header2">KDMC approved structural engineer and civil engineer contractors, PWD licence holder civil engineer, Repairing work as per structural Audit</p>
-							</div>
-						</div>
-	                 </div>                
-                </ion-slide>               
-            </ion-slide-box>					
-						<!--//screen-gallery-->
-					</div>
+			                 </div>                
+		                </ion-slide>
+		                <ion-slide>    
+			                 <div class="home-slide">
+			                 	<div class="slide-css-test">
+			                 		<div class="col z-inx">
+										<div class="test-review">
+											<div class="img-agile">
+												<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
+											</div>
+											<h4>Mr. Trambak Toke, Dombivali(w).</h4>
+											<p class="text-deco">I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
+										</div>
+									</div>							
+								</div>
+			                 </div>                
+		                </ion-slide>
+		                <ion-slide>    
+			                 <div class="home-slide">
+			                 	<div class="slide-css-test">
+			                 		<div class="col z-inx">
+										<div class="test-review">
+											<div class="img-agile">
+												<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
+											</div>
+											<h4>Mr. Trambak Toke, Dombivali(w).</h4>
+											<p class="text-deco">I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
+										</div>
+									</div>							
+								</div>
+			                 </div>                
+		                </ion-slide>  
+		                <ion-slide>    
+			                 <div class="home-slide">
+			                 	<div class="slide-css-test">
+			                 		<div class="col z-inx">
+										<div class="test-review">
+											<div class="img-agile">
+												<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
+											</div>
+											<h4>And Many More......</h4>
+											<p class="text-deco">I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
+										</div>
+									</div>							
+								</div>
+			                 </div>                
+		                </ion-slide>          
+		            </ion-slide-box>
 				</div>
 			</div>
 		</div>    
+		<div class="contact-agile" id="Contact">
+			<div class="container">
+				<h3 class="title">Get In touch <span>with us</span></h3>
+				<div class="row">
+				<div class="contact-left col-40">
+					<h4>Our Address</h4>
+					<h5>Address 1</h5>
+					<p>003, Shivanand Sudma Soc,</p>
+					<p>Jajai Nagar, Gograswadi.</p>
+					<p>Op. Gavdevi Complex.</p>
+					<p>Dombivali(w), Mumbai, India.</p>
+					<h5>Address 2</h5>
+					<p>003, Shivanand Sudma Soc,</p>
+					<p>Jajai Nagar, Gograswadi.</p>
+					<p>Op. Gavdevi Complex.</p>
+					<p>Dombivali(w), Mumbai, India.</p>
+					<h4>Phone</h4>
+					<p>Atul Jadhav.</p>
+					<p>+(91) 9400200793</p>
+					<p>+(91) 7208797343</p>
+				</div>
+				<div class="contact-middle col-60">
+					<h4>We'd love to hear from you. Send us message and we'll respond as soon as possible.</h4>
+					
+						<div class="form-agileinfo">
+							<p>Name</p>
+							<input type="text" ng-model="data.name" placeholder="Your name" required="">
+							<p>Email</p>
+							<input type="email" ng-model="data.email" placeholder="Your email" required="">
+						</div>
+						<div class="form-agileits-w3layouts">
+							<p>Message</p>
+							<textarea ng-model="data.message" placeholder="message" required=""></textarea>
+							<input type="submit" name="submit" value="Send message" ng-click="sentmail()">
+						</div>
+						<div class="clearfix"></div>
+					
+				</div>				
+			</div>
+			</div>
+		</div>
 
       
 	</ion-content>
