@@ -14,6 +14,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/a',function(req,res) {
     res.send("Hello TDD! can u here me?");
 });
+app.post('/send-email', function (req, res) {
+  // Grab the form data and send email
+});
 
 app.listen(3002,function () {
     console.log("Server 3002 is started");

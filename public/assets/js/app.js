@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ionic','ui.router'])
+var app = angular.module('app', ['ionic','ionic-toast','ui.router'])
 
 .run(['$state', '$rootScope', function ($state, $rootScope) {
 // $state.go("home");

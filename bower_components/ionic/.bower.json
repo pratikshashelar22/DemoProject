@@ -1,0 +1,14 @@
+{
+  "name": "ionic",
+  "homepage": "https://github.com/driftyco/ionic",
+  "version": "4.11.3",
+  "_release": "4.11.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.11.3",
+    "commit": "420aa6639214e7d2e7b7413e699ace3d7fd35e40"
+  },
+  "_source": "https://github.com/driftyco/ionic.git",
+  "_target": ">=0.9.27",
+  "_originalSource": "ionic"
+}

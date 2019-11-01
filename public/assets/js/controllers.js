@@ -1,7 +1,8 @@
 angular.module('app')
-.controller('homectlr', function($anchorScroll,$location, $scope,$state,$ionicPopup,$ionicModal,$ionicScrollDelegate,$http){
+.controller('homectlr', function($anchorScroll,$location, $scope,$state,$ionicPopup,$ionicModal,$ionicScrollDelegate,$http,ionicToast){
 	$round = true;
 	$scope.data={};
+	var emailFormat = /^[^@\s]+@([^@\s]+\.)+[^@\s]+$/i;
 	$scope.ChangeContent = function(){
 		angular.element(document.getElementById("p1")).text("Value changed");
 		angular.element( $("ion-navicon-round").toggle("ion-navicon-cross"));
@@ -63,7 +64,20 @@ angular.module('app')
    	$scope.closeModal = function() {
       	$scope.modal.hide();
   	};
-  	$scope.sentmail = function(){
+  	$scope.sentmail = function($event){
+  		if(!$scope.data.name){
+  			ionicToast.show("Please Enter Name", 'bottom', false, 5000);
+  			$event.preventDefault();
+  		}else if(!$scope.data.email){
+  			ionicToast.show("Please Enter Email Id", 'bottom', false, 5000);
+  			$event.preventDefault();
+  		}else if(!emailFormat.test($scope.data.email)){
+  			ionicToast.show("Please Enter Valid Email", 'bottom', false, 5000);
+  			$event.preventDefault();
+  		}else if(!$scope.data.message){
+  			ionicToast.show("Please Enter Name", 'bottom', false, 5000);
+  			$event.preventDefault();
+  		}
   		
   	}
    	$('#recipeCarousel').carousel({

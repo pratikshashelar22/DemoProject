@@ -29,7 +29,7 @@
 	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('services')">Services</button>
 	  				</li>
 	  				<li class="nav-item-btn">
-	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('video')">Gallary</button>
+	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('Gallary')">Gallary</button>
 	  				</li>
 	  				<li class="nav-item-btn">
 	  					<button ion-button class= "nav-button" ng-click="gotoAnchor('about')">About Us</button>
@@ -268,6 +268,36 @@
 			    </div>		   
 			</div>
 		</div>
+		<div class="gal-1" id="Gallary3">
+			<div class="container text-center">
+			    <h2 class="title">CATALOGUE 2017</h2>
+			    <div class="img-scr" style="margin-top: 60px !important">
+	       			<div class="img-hover-zoom">
+	                    <img  src="../../assets/img/contact.jpg"  style="width:100%; height: 200px">   
+		                    <!-- <div class="carousel-content">
+		                        <h6>Click here to see full image</h6>
+		                    </div> -->
+		                            
+	                </div>
+	                <div class="img-hover-zoom">
+	                    <img  src="../../assets/img/b1.jpg"  style="width:100%; height: 200px">
+	                </div>
+	                <div class="img-hover-zoom" >
+	                    <img  src="../../assets/img/b2.jpg"  style="width:100%; height: 200px">
+	                </div>
+	                <div class="img-hover-zoom" >
+	                    <img  src="../../assets/img/b3.jpg"  style="width:100%; height: 200px">
+	                </div>
+	                <div class="img-hover-zoom" >
+	                    <img src="../../assets/img/download.jpg"  style="width:100%; height: 200px">
+	                </div>
+	                <div class="img-hover-zoom">
+	                    <img  src="../../assets/img/b1.jpg"  style="width:100%; height: 200px">
+	                </div>
+	            </div>		            
+		        
+		    </div>		   
+		</div>
 	    <div id="testimonials" class="testimonials">
 			<div class="container">
 				<h1 class="testimonialstittle">Testimonials</h1>
@@ -360,25 +390,25 @@
 				</div>
 				<div class="contact-middle col-60">
 					<h4>We'd love to hear from you. Send us message and we'll respond as soon as possible.</h4>
-					
+					<form id="gform" action="https://script.google.com/a/sodelsolutions.com/macros/s/AKfycbz9lIKjmuKS6PXLKdOyjF13kw5_m0we16-6Vkuw/exec" method="post">
 						<div class="form-agileinfo">
 							<p>Name</p>
-							<input type="text" ng-model="data.name" placeholder="Your name" required="">
+							<input type="text" name="name" ng-model="data.name" placeholder="Your name" required="">
 							<p>Email</p>
-							<input type="email" ng-model="data.email" placeholder="Your email" required="">
+							<input type="email" name="email" ng-model="data.email" placeholder="Your email" required="">
 						</div>
 						<div class="form-agileits-w3layouts">
 							<p>Message</p>
-							<textarea ng-model="data.message" placeholder="message" required=""></textarea>
-							<input type="submit" name="submit" value="Send message" ng-click="sentmail()">
+							<textarea name="message" ng-model="data.message" placeholder="message" required=""></textarea>
+							<input type="submit" value="Send message" ng-click="sentmail($event)">
 						</div>
-						<div class="clearfix"></div>
-					
+						<div class="clearfix"></div>		
+						<div style="display: none" id="thankyou_message">
+							<h2><em>Thanks</em> for Contacting Us!!</h2>
+						</div>			
 				</div>				
 			</div>
 			</div>
-		</div>
-
-      
+		</div>      
 	</ion-content>
 </ion-view>

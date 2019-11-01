@@ -102,6 +102,19 @@ h3.title{text-align: center;text-transform: uppercase;}
 .contact-agile h4 {color: #000;font-size: 22px;margin-bottom: 10px;}
 .contact-left p {text-align: left;font-size: 15px;margin-bottom: 17px;color: #f3cfcf;letter-spacing: 1px;}
 .bor-des2{border: 1vw solid rgba(0, 0, 0, 0.69);position: absolute;margin: 0 5%;width: 70%;height: 25vw;opacity: 0.7;z-index: 0;}
+.gal-1{background-color: white;height:auto;}
+.img-scr{display:flex;flex-wrap: wrap;margin: 0 auto;}
+.img-scr div {width: calc(25% - 10px);margin: 5px auto;}
+.img-hover-zoom{height: 200px;overflow: hidden;}
+.img-hover-zoom img { transform-origin: 50% 65%;transition: transform 5s, filter 3s ease-in-out;filter: brightness(80%);}
+.img-hover-zoom:hover img {height: 200px;filter: brightness(100%);transform: scale(3);}
+@media only screen and (min-width:768px) and (max-width: 1024px) { 
+    .img-scr div {width: calc(50% - 10px); margin: 5px auto; }
+}
+@media only screen and (min-width: 120px) and (max-width:767px){
+	.img-src{height:auto;}
+    .img-scr div {width: calc(100% - 10px);margin: 5px auto;}  
+}
 @media only screen and (max-width: 767px)  and (min-width:600) {
 	.sc-con{width: 70%;margin-top: 0px !important;line-height: 2}
 }
