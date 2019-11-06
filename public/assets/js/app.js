@@ -3,7 +3,7 @@ var app = angular.module('app', ['ionic','ionic-toast','ui.router'])
 .run(['$state', '$rootScope', function ($state, $rootScope) {
 // $state.go("home");
 }])
-.config([ '$stateProvider', '$urlRouterProvider','$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+.config([ '$stateProvider', '$urlRouterProvider','$locationProvider','$httpProvider', function($stateProvider, $urlRouterProvider, $locationProvider,$httpProvider) {
 	// $locationProvider.html5Mode(true).hashPrefix('!');
 	$urlRouterProvider.otherwise('/home');	
 	$stateProvider
@@ -25,6 +25,8 @@ var app = angular.module('app', ['ionic','ionic-toast','ui.router'])
 	    url: "/inovativeWork",
 	    templateUrl: "assets/templates/inovativeWorkPopup.html"	    
 	})
+	 $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+
    
 }]);
   

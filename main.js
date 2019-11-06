@@ -14,8 +14,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/a',function(req,res) {
     res.send("Hello TDD! can u here me?");
 });
-app.post('/send-email', function (req, res) {
-  // Grab the form data and send email
+app.post('/',function(req,res){   
+   var htmlData = 'Hello:';
+   res.send(htmlData);
+   console.log(htmlData);
 });
 
 app.listen(3002,function () {

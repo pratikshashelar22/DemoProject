@@ -1,8 +1,9 @@
 angular.module('app')
-.controller('homectlr', function($anchorScroll,$location, $scope,$state,$ionicPopup,$ionicModal,$ionicScrollDelegate,$http,ionicToast){
+.controller('homectlr', function($anchorScroll,$location, $scope,$state,$ionicPopup,$ionicModal,$ionicScrollDelegate,$http,ionicToast,$http){
 	$round = true;
 	$scope.data={};
 	var emailFormat = /^[^@\s]+@([^@\s]+\.)+[^@\s]+$/i;
+	$scope.anchorTab ="";
 	$scope.ChangeContent = function(){
 		angular.element(document.getElementById("p1")).text("Value changed");
 		angular.element( $("ion-navicon-round").toggle("ion-navicon-cross"));
@@ -24,9 +25,13 @@ angular.module('app')
 	        // since $location.hash hasn't changed
 	        $anchorScroll();
    		}*/
-   		$location.hash(section);   //set the location hash
-	    var handle = $ionicScrollDelegate.$getByHandle('myPageDelegate');
-	    handle.anchorScroll(true);
+   		if($scope.anchorTab != section){
+   			$scope.anchorTab = section;
+			$location.hash(section);   //set the location hash
+		    var handle = $ionicScrollDelegate.$getByHandle(section);
+		    handle.anchorScroll(true);
+		}
+	    // $ionicScrollDelegate.$getByHandle(section).scrollTop();
 	};
 	$scope.CivilWorkSample = function(){
 		/*var myPopup = $ionicPopup.show({
@@ -65,6 +70,7 @@ angular.module('app')
       	$scope.modal.hide();
   	};
   	$scope.sentmail = function($event){
+  		document.getElementById("thankyou_message").style = "display:none";
   		if(!$scope.data.name){
   			ionicToast.show("Please Enter Name", 'bottom', false, 5000);
   			$event.preventDefault();
@@ -77,7 +83,16 @@ angular.module('app')
   		}else if(!$scope.data.message){
   			ionicToast.show("Please Enter Name", 'bottom', false, 5000);
   			$event.preventDefault();
-  		}
+  		}else{
+  			var url= "https://script.googleusercontent.com/a/macros/sodelsolutions.com/echo?user_content_key=oZgkEDcdSXcaTUXj3p7kPNhItTwSrtfdQEMi1cfhx9l8PpNZoGzO4c4MHrJLO3s4JjFwW-re0mTa22-W3HXz86Q7YYY7YDywm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_uIqi1JcfNnFIBqnPfj8GUVgVDhj4emyCpFpnl0J3Owo7uRdw1oadTeU0LJmlwYUMjKmeeCsQE6vfFe3UjG4UcSpl8lQJO2vcdO55T6qw8bo&lib=MfbdwIkOt3MEfrkxsLVwA41V5rJybEyUb";
+  			/*// var url ="https://script.google.com/a/sodelsolutions.com/macros/s/AKfycbz9lIKjmuKS6PXLKdOyjF13kw5_m0we16-6Vkuw/exec";
+		   $http.get(url).success( function(response) {
+		      $scope.result = response; 
+		  }).error(function (data,status) {
+                alert("error");
+            });*/
+            document.getElementById("thankyou_message").style= "display:block";
+		}
   		
   	}
    	$('#recipeCarousel').carousel({
