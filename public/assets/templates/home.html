@@ -393,19 +393,20 @@
 					<form id="gform" action="https://script.google.com/a/sodelsolutions.com/macros/s/AKfycbz9lIKjmuKS6PXLKdOyjF13kw5_m0we16-6Vkuw/exec" method="post">
 						<div class="form-agileinfo">
 							<p>Name</p>
-							<input type="text" name="name" ng-model="data.name" placeholder="Your name" required="">
+							<input type="text" id="name" name="name" ng-model="data.name" placeholder="Your name" required="">
 							<p>Email</p>
-							<input type="email" name="email" ng-model="data.email" placeholder="Your email" required="">
+							<input type="email" id="email" name="email" ng-model="data.email" placeholder="Your email" required="">
 						</div>
 						<div class="form-agileits-w3layouts">
 							<p>Message</p>
-							<textarea name="message" ng-model="data.message" placeholder="message" required=""></textarea>
+							<textarea id="message" name="message" ng-model="data.message" placeholder="message" required=""></textarea>
 							<input type="submit" value="Send message" ng-click="sentmail($event)">
 						</div>
 						<div class="clearfix"></div>		
 						<div style="display: none" id="thankyou_message">
 							<h2><em>Thanks</em> for Contacting Us!!</h2>
-						</div>			
+						</div>		
+						
 				</div>				
 			</div>
 			</div>
