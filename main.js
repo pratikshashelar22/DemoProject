@@ -5,7 +5,7 @@ var express=require("express");
 var bodyParser=require("body-parser");
 
 var app=express();
-
+var port = process.env.PORT || 3002
 app.use(express.static('public'));
 var cors = require('cors');
 app.use(cors());
@@ -21,6 +21,6 @@ app.post('/',cors(),function(req,res){
    console.log(htmlData);
 });
 
-app.listen(3002,function () {
-    console.log("Server 3002 is started");
+app.listen(port,function () {
+    console.log("App running");
 });
