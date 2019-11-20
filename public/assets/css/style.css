@@ -150,10 +150,13 @@ h3.title{text-align: center;text-transform: uppercase;}
 .carousel-inner .carousel-item-left.active, 
 .carousel-inner .carousel-item-prev {transform: translateX(-33.333333%);}
 .img-hover-zoom--slowmo:hover {vertical-align: middle;height:150px !important;width:150px;z-index:10 !important;filter: brightness(100%);transform: scale(1.5);}
-.col-3{flex: 0 0 33.333333%;max-width: 33.333333%;}
+.col-3{flex: 0 0 90%;max-width: 90%;}
+.h-15{height: auto !important;}
 .slide-css-test {height: 53vw}
 .slider-pager {bottom:0 !important;}
 .contact-left{flex: 0 0 100% !important;max-width: 100% !important;}
 .contact-middle{flex: 0 0 100% !important;max-width: 100% !important;}
 .button{ font-size: 13px;}
+.sc-video{font-size: 5vw;}
+.modal-content{font-size: 5vw;}
 }

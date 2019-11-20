@@ -5,6 +5,7 @@ angular.module('app')
   $scope.url='assets/templates/inovativeWorkPopup.html';
 	var emailFormat = /^[^@\s]+@([^@\s]+\.)+[^@\s]+$/i;
 	$scope.anchorTab ="";  
+  var w=$(window).width();
 	$scope.ChangeContent = function(){
 		angular.element(document.getElementById("p1")).text("Value changed");
 		angular.element( $("ion-navicon-round").toggle("ion-navicon-cross"));
@@ -104,20 +105,21 @@ angular.module('app')
 	  interval: 10000
   })
   $('.carousel .carousel-item').each(function(){
+
 	    var next = $(this).next();
 	    if (!next.length) {
 	    next = $(this).siblings(':first');
 	    }
 	    next.children(':first-child').clone().appendTo($(this));
-	    
-	    for (var i=0;i<2;i++) {
+	    var j = w > 600 ? 2 : 1;
+	    for (var i=0;i<j;i++) {
 	        next=next.next();
 	        if (!next.length) {
 	        	next = $(this).siblings(':first');
 	      	}
 	        
 	        next.children(':first-child').clone().appendTo($(this));
-	      }
+	     }
   });
   $('.carousel .carousel-item2').each(function(){
 	    var next = $(this).next();
