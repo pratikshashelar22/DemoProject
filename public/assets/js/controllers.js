@@ -71,7 +71,7 @@ angular.module('app')
   			ionicToast.show("Please Enter Name", 'bottom', false, 5000);
   			$event.preventDefault();
   		}else{ 			
-  		
+  		  document.getElementById('submitMail').disabled = true;
         var formData = $('#gform').serialize();
         $.ajax({
               type        : 'POST', 
@@ -80,16 +80,20 @@ angular.module('app')
               dataType    : 'json',
               encode      : true
          }).done(function(data) {
-              if(data.result == 'success') {                
+              if(data.result == 'success') {    
+                 $scope.data  = {};          
                  document.getElementById("thankyou_message").style= "display:block";
                  document.getElementById("h2text").innerHTML = "Thanks for Contacting Us!!";
+                 document.getElementById('submitMail').disabled = false;
               } else {
                 document.getElementById("thankyou_message").style= "display:block";
                 document.getElementById("h2text").innerHTML = "Sorry!! Failed to Submit Your Message Please Try Again After sometime!!";
+                document.getElementById('submitMail').disabled = false;
               }
          }).fail(function (jqXHR,status,err) {
               document.getElementById("thankyou_message").style= "display:block"; 
               document.getElementById("h2text").innerHTML = err;
+              document.getElementById('submitMail').disabled = false;
          });        
     	}
   }
