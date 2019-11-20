@@ -146,12 +146,12 @@ h3.title{text-align: center;text-transform: uppercase;}
 .sc-con{width: 70%;margin-top: 10px;line-height: 2}
 .team{height:820px;}
 .carousel-inner .carousel-item-right.active,
-.carousel-inner .carousel-item-next {transform: translateX(33.333333%);}
+.carousel-inner .carousel-item-next {transform: translateX(100%);}
 .carousel-inner .carousel-item-left.active, 
-.carousel-inner .carousel-item-prev {transform: translateX(-33.333333%);}
-.img-hover-zoom--slowmo:hover {vertical-align: middle;height:150px !important;width:150px;z-index:10 !important;filter: brightness(100%);transform: scale(1.5);}
-.col-3{flex: 0 0 90%;max-width: 90%;}
-.h-15{height: auto !important;}
+.carousel-inner .carousel-item-prev {transform: translateX(-100%);}
+.img-hover-zoom--slowmo:hover {vertical-align: middle;height: 35vw !important;max-width: 100% !important;z-index:10 !important;filter: brightness(100%);transform: scale(1.5);}
+.col-3{flex: 0 0 100%;max-width: 100%;}
+.h-15{height: 35vw !important;}
 .slide-css-test {height: 53vw}
 .slider-pager {bottom:0 !important;}
 .contact-left{flex: 0 0 100% !important;max-width: 100% !important;}
