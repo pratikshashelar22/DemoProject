@@ -155,4 +155,5 @@ h3.title{text-align: center;text-transform: uppercase;}
 .slider-pager {bottom:0 !important;}
 .contact-left{flex: 0 0 100% !important;max-width: 100% !important;}
 .contact-middle{flex: 0 0 100% !important;max-width: 100% !important;}
+.button{ font-size: 13px;}
 }
