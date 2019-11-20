@@ -112,7 +112,7 @@ angular.module('app')
 	    }
 	    next.children(':first-child').clone().appendTo($(this));
 	    var j = w > 600 ? 2 : 1;
-	    for (var i=0;i<j;i++) {
+	    for (var i=0;i<2;i++) {
 	        next=next.next();
 	        if (!next.length) {
 	        	next = $(this).siblings(':first');
