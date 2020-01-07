@@ -3,6 +3,36 @@ angular.module('app')
 	$round = true;
 	$scope.data={};
   $scope.url='assets/templates/inovativeWorkPopup.html';
+  $scope.completedProj =[
+   {"name":"Meghdoot co. op. Housing Society,Tilaknagar, Dombivli East.","work":"Structural Repairing, External Plaster,External Paint.","year":"2005","cost":"12,00,000/-"},
+   {"name":"DevAshih Co. Op. Housing Society,Tilaknagar,Dombivli East.","work":"Structural Repairing, External Plaster,External Paint.","year":"2006","cost":"10,50,000/-"},
+   {"name":"Manorama Co. Op. Housing Society,RokelDepo Gully,SantNamdev Path,Dombivli East.","work":"Structural Repairing, External Plaster,External Paint.","year":"2005","cost":"12,00,000/-"},
+   {"name":"NavRam darshan Co. Op. Housing Society,Jijai Nagar,Gograsswadi,Dombivli East.","work":"Structural Repairing, External Patch Plaster,Crack filling,Terrace Water Proofing,Plumbing,Painting.","year":"2007","cost":"16,75,000/-"},
+   {"name":"SukhSamadhan Co. Op. Housing Society,Tilaknagar,Dombivli East.","work":"Terrace Waterproofing,Patch Plaster.","year":"2008","cost":"5,50,000"},
+   {"name":"Shubhda Co. Op. Housing Society,Dombivli East.","work":"Structural Repairing, External Plaster,Plumbing work.","year":"2010","cost":"12,00,000/-"},
+   {"name":"Ashwini Building,Tilak Nagar,Dombivli East.","work":"Structural repair,Patch Plaster,Crack Filling,Plumbing Work.","year":"2010","cost":"4,25,000/-"},
+   {"name":"Godawari Society,Dombivli","work":"Compound wall Repair,Staircase paint,Soling coba,","year":"2011","cost":"3,60,000/-"},
+   {"name":"Gulmohar Co. Op. Housing Society, Tilak Nagar,Dombivli East.","work":"External Plaster,External Paint,Soling coba, Paver fixing ,Plumbing work.","year":"2012","cost":"15,45,000/-/-"},
+   {"name":"VishrantiDham,Dombivli East.","work":"Structural repair,Patch work,Crack Filling,Terrace Waterproofing,UGTank Repair, Plumbing Work","year":"2012","cost":"5,00,000/-"},
+   {"name":"Amar villa,Dombivli East.","work":"Structural repair,Patch work,Crack Filling.","year":"2012","cost":"4,00,000/-"},
+   {"name":"Shree Building,Bandhutwa Society,Dombivli East.","work":"Structural repair,Patch work,Crack Filling,External Paint.","year":"2012","cost":"5,75,000/-"},
+   {"name":"Laljiva Co. Op. Housing Society,Tilak Nagar, Dombivli East.","work":"Laljiva Co. Op. Housing Society,Tilak Nagar, Dombivli East.","year":"2013","cost":"6,50,000/-"},
+   {"name":"G.S.B. Mandal School,Ambika Nagar, Gograsswadi,Dombivli East.","work":"Drainage line laying,Soling Coba,Plumbing Work.","year":"2014","cost":"4,00,000/-"},
+   {"name":"Gunjan Society,Tilak Nagar, Dombivli East.","work":"Overhead Tank Repair and Plaster, Dadoo Tiles fixing in Water Tank,Plumbing Work","year":"2014","cost":"2,00,000/-"},
+   {"name":"Santosh Darshan Society,Jijai Nagar,Gograsswadi,Dombivli East.","work":"Drainage line laying,Soling Coba,Paver Fixing,Plumbing Work,Grill Fixing.","year":"2015","cost":"10,50,000/-"},
+   {"name":"Bhanu Society,Bhanunagar, Near P.P. Chamber mall,Dombivli East.","work":"Drainage line laying,Soling Coba,New R.C.C UG tank construction,Plumbing Work","year":"2015","cost":"4,35,000/-"},
+   {"name":"Raj Hans Society,Dombivli East","work":"Exiting UG Tank Waterproofing and Plastering,New R.C.C. UG tank Construction,Pump room Repair.","year":"2015","cost":"2,75,000/-"},
+   {"name":"Amar Niketan Society,Tilak Nagar, Dombivli East.","work":"Structural repair,Patch work,Crack Filling,OHT Waterproofing and Plastering,G.I. Railling Fixing in Staircase.","year":"2016","cost":"6,54,000/-"},
+   {"name":"Nilam Bunglow,Dombivli East.","work":"Crackfilling,Painting.","year":"2016","cost":"2,00,000/-"},
+   {"name":"Murlivihar Society,Dombivli East.","work":"Structural repair,Patch work,Crack Filling,Painting.","year":"2016","cost":"4,50,000/-"},
+   {"name":"Raj Hans Society,Dombivli East.","work":"OH tanks Repair, Plaster, Waterproofing","year":"2017","cost":"2,00,000/-"},
+   {"name":"Shri Samarth Krupa Society,Nandivali Road,Dombivli East.","work":"OH tanks- Repair, Waterproofing, Plaster,  Tiles fixing.","year":"2017","cost":"3,50,000/-"},
+   {"name":"Virat Co. Op. Housing Society, Tilak Nagar,Dombivli East.","work":"Drainage Line Repairing, Soling coba.","year":"2018","cost":"2,50,000/-"},
+   {"name":"Bhanu Co. Op. Hsg. Soc. Ltd., Near Railway Station Dombivli East.","work":"Structural repair,Patch work,Crack Filling,Painting Work,Plumbing work.","year":"May 2018","cost":"12,00,000/-"},
+   {"name":"Manorama Society.Rockel depo gully,Sant namdev path, Dombivli East.","work":"Structural repair,Patch work,Crack Filling,Painting Work, Plumbing work.","year":"2018","cost":"6,00,000/-"},
+   {"name":"Navramdarshan Society(Gograsswadi), Manorama Society (SantNamdev Path), Yojna Society (Ambika Nagar), Sita Ram Nagar CHS , AjanthaDarshan CHS.Etc. and many more..","work":"Municipal Main Line Water Connections.","year":"","cost":"Our Customers Happiness Can’t be judge by money"}
+   ];
+
 	var emailFormat = /^[^@\s]+@([^@\s]+\.)+[^@\s]+$/i;
 	$scope.anchorTab ="";  
   var w=$(window).width();
@@ -140,5 +170,4 @@ angular.module('app')
 })
 .controller('menuctlr', function($scope, $stateParams) {
    
-
 });

@@ -127,6 +127,12 @@ h3.title{text-align: center;text-transform: uppercase;}
 .copy p {color: #fff;font-size: 11px !important;letter-spacing: 2px;}
 .copy a {color: #e84f5a !important;text-decoration: none;}
 #h2text {color: #e84f5a;}
+.ol-li{list-style: decimal;padding: 10px 20px;}
+.ol-li li{padding: 5px;}
+.row{margin-right: 0; margin-left: 0;}
+.tb-header{background:#ac2c35;font-weight: bold;color: antiquewhite;}
+.tb-body{color:#ac2c35;}
+.bar{height: 55px;}
 @media only screen and (min-width:768px) and (max-width: 1024px) { 
     .img-scr div {width: calc(50% - 10px); margin: 5px auto; }
 }
@@ -159,5 +165,5 @@ h3.title{text-align: center;text-transform: uppercase;}
 .button{ font-size: 13px;}
 .sc-video{font-size: 5vw;}
 .modal-content{font-size: 5vw;}
-width: 1319px;
+
 }

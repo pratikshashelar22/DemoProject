@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ionic','ionic-toast','ui.router'])
+ var app = angular.module('app', ['ionic','ionic-toast','ui.router'])
 
 .run(['$state', '$rootScope', function ($state, $rootScope) {
 // $state.go("home");
@@ -25,6 +25,8 @@ var app = angular.module('app', ['ionic','ionic-toast','ui.router'])
 	    url: "/inovativeWork",
 	    templateUrl: "assets/templates/inovativeWorkPopup.html"	    
 	})
+	
+	
 	 $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
    
