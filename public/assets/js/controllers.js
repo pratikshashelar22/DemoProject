@@ -3,6 +3,7 @@ angular.module('app')
 	$round = true;
 	$scope.data={};
   $scope.url='assets/templates/inovativeWorkPopup.html';
+  var slideIndex = 1;
   $scope.completedProj =[
    {"name":"Meghdoot co. op. Housing Society,Tilaknagar, Dombivli East.","work":"Structural Repairing, External Plaster,External Paint.","year":"2005","cost":"12,00,000/-"},
    {"name":"DevAshih Co. Op. Housing Society,Tilaknagar,Dombivli East.","work":"Structural Repairing, External Plaster,External Paint.","year":"2006","cost":"10,50,000/-"},
@@ -31,6 +32,20 @@ angular.module('app')
    {"name":"Bhanu Co. Op. Hsg. Soc. Ltd., Near Railway Station Dombivli East.","work":"Structural repair,Patch work,Crack Filling,Painting Work,Plumbing work.","year":"May 2018","cost":"12,00,000/-"},
    {"name":"Manorama Society.Rockel depo gully,Sant namdev path, Dombivli East.","work":"Structural repair,Patch work,Crack Filling,Painting Work, Plumbing work.","year":"2018","cost":"6,00,000/-"},
    {"name":"Navramdarshan Society(Gograsswadi), Manorama Society (SantNamdev Path), Yojna Society (Ambika Nagar), Sita Ram Nagar CHS , AjanthaDarshan CHS.Etc. and many more..","work":"Municipal Main Line Water Connections.","year":"","cost":"Our Customers Happiness Can’t be judge by money"}
+   ];
+   $scope.recentProj =[
+   {"name":"Meghdoot co. op. Housing Society,Tilaknagar, Dombivli East.","work":"Structural Repairing, External Plaster,External Paint.","year":"2005","cost":"12,00,000/-"},
+   {"name":"DevAshih Co. Op. Housing Society,Tilaknagar,Dombivli East.","work":"Structural Repairing, External Plaster,External Paint.","year":"2006","cost":"10,50,000/-"},
+   {"name":"Manorama Co. Op. Housing Society,RokelDepo Gully,SantNamdev Path,Dombivli East.","work":"Structural Repairing, External Plaster,External Paint.","year":"2005","cost":"12,00,000/-"},
+   {"name":"NavRam darshan Co. Op. Housing Society,Jijai Nagar,Gograsswadi,Dombivli East.","work":"Structural Repairing, External Patch Plaster,Crack filling,Terrace Water Proofing,Plumbing,Painting.","year":"2007","cost":"16,75,000/-"},
+   {"name":"SukhSamadhan Co. Op. Housing Society,Tilaknagar,Dombivli East.","work":"Terrace Waterproofing,Patch Plaster.","year":"2008","cost":"5,50,000"},
+   {"name":"Shubhda Co. Op. Housing Society,Dombivli East.","work":"Structural Repairing, External Plaster,Plumbing work.","year":"2010","cost":"12,00,000/-"},
+   {"name":"Ashwini Building,Tilak Nagar,Dombivli East.","work":"Structural repair,Patch Plaster,Crack Filling,Plumbing Work.","year":"2010","cost":"4,25,000/-"},
+   {"name":"Godawari Society,Dombivli","work":"Compound wall Repair,Staircase paint,Soling coba,","year":"2011","cost":"3,60,000/-"},
+   {"name":"Gulmohar Co. Op. Housing Society, Tilak Nagar,Dombivli East.","work":"External Plaster,External Paint,Soling coba, Paver fixing ,Plumbing work.","year":"2012","cost":"15,45,000/-/-"},
+   {"name":"VishrantiDham,Dombivli East.","work":"Structural repair,Patch work,Crack Filling,Terrace Waterproofing,UGTank Repair, Plumbing Work","year":"2012","cost":"5,00,000/-"},
+   {"name":"Amar villa,Dombivli East.","work":"Structural repair,Patch work,Crack Filling.","year":"2012","cost":"4,00,000/-"},
+   {"name":"Shree Building,Bandhutwa Society,Dombivli East.","work":"Structural repair,Patch work,Crack Filling,External Paint.","year":"2012","cost":"5,75,000/-"}
    ];
 
 	var emailFormat = /^[^@\s]+@([^@\s]+\.)+[^@\s]+$/i;
@@ -167,6 +182,43 @@ angular.module('app')
 	        next.children(':first-child').clone().appendTo($(this));
 	      }
   });
+  $scope.openModal1 = function() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+$scope.closeModal1 = function() {
+  document.getElementById("myModal").style.display = "none";
+}
+  
+
+$scope.plusSlides = function(n) {
+  slideIndex += n
+  $scope.showSlides1(slideIndex);
+}
+
+$scope.currentSlide = function(n) {
+  slideIndex = n
+  $scope.showSlides1(slideIndex);
+}
+
+$scope.showSlides1 = function(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+};
+$scope.showSlides1(slideIndex);
 })
 .controller('menuctlr', function($scope, $stateParams) {
    

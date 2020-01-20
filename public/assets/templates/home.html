@@ -52,7 +52,7 @@
 	  		<marquee>pratiksha@gmail.com</marquee>
 	  	</nav>		 --> 
 	  	<div delegate-handle="home" id="home">   	
-            <ion-slide-box  auto-play="true" does-continue="true" slide-interval="3000" >
+            <ion-slide-box  auto-play="false" does-continue="true" slide-interval="3000" >
                 <ion-slide>    
 	                 <div class="home-slide">
 	                 	<div class="slide-css back-img1">
@@ -299,9 +299,54 @@
 	                <div class="img-hover-zoom" ng-click="openModal('gallery','../../assets/img/b1.jpg')">
 	                    <img  src="../../assets/img/b1.jpg"  style="width:100%; height: 200px">
 	                </div>
-	            </div>		            
+	            </div>          
 		        
 		    </div>		   
+		</div>
+		<div id="myModal" class="modal">
+  			<span class="close cursor" ng-click="closeModal1()">&times;</span>
+  			<div class="modal-content">
+			    <div class="mySlides">
+			      <div class="numbertext">1 / 4</div>
+			      <img src="../../assets/img/b1.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">2 / 4</div>
+			      <img src="../../assets/img/b1.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">3 / 4</div>
+			      <img src="../../assets/img/b1.jpg" style="width:100%">
+			    </div>
+			    
+			    <div class="mySlides">
+			      <div class="numbertext">4 / 4</div>
+			      <img src="../../assets/img/b1.jpg" style="width:100%">
+			    </div>
+			    
+			    <a class="prev" ng-click="plusSlides(-1)">&#10094;</a>
+			    <a class="next" ng-click="plusSlides(1)">&#10095;</a>
+
+			    <div class="caption-container">
+			      <p id="caption"></p>
+			    </div>
+
+
+			    <div class="column">
+			      <img class="demo cursor" src="../../assets/img/b1.jpg" style="width:100%" ng-click="currentSlide(1)" alt="Nature and sunrise">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../../assets/img/b1.jpg" style="width:100%" ng-click="currentSlide(2)" alt="Snow">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../../assets/img/b1.jpg" style="width:100%" ng-click="currentSlide(3)" alt="Mountains and fjords">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../../assets/img/b1.jpg" style="width:100%" ng-click="currentSlide(4)" alt="Northern Lights">
+			    </div>
+		  	</div>
 		</div>
 	    <div id="testimonials" class="testimonials">
 			<div class="container">
@@ -316,8 +361,8 @@
 											<div class="img-agile">
 												<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
 											</div>
-											<h4>Mr. Trambak Toke, Dombivali(w).</h4>
-											<p class="text-deco">I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
+											<h4>Mr. Hemant Patole</h4>
+											<p class="text-deco">Really great experience with this firm, Working team is highly skilled and cooperative. Cost factor is also economical beacause they give us their own suggestions as per their 20 years experience. I really thank full to you sir . .Best of luck . .</p>
 										</div>
 									</div>							
 								</div>
@@ -331,8 +376,8 @@
 											<div class="img-agile">
 												<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
 											</div>
-											<h4>Mr. Trambak Toke, Dombivali(w).</h4>
-											<p class="text-deco">I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
+											<h4>Mr. Tatyasaheb Yadav</h4>
+											<p class="text-deco">Quick responce,friendly behavior,100%quality and professional work.</p>
 										</div>
 									</div>							
 								</div>
@@ -346,13 +391,28 @@
 											<div class="img-agile">
 												<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
 											</div>
-											<h4>Mr. Trambak Toke, Dombivali(w).</h4>
-											<p class="text-deco">I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
+											<h4>Mr.Sanjay Barge</h4>
+											<p class="text-deco">Affordable and quality Plumbing services in Tilak Nagar , Dombivli east</p>
 										</div>
 									</div>							
 								</div>
 			                 </div>                
-		                </ion-slide>  
+		                </ion-slide>
+		                 <ion-slide>    
+			                 <div class="home-slide">
+			                 	<div class="slide-css-test">
+			                 		<div class="col z-inx">
+										<div class="test-review">
+											<div class="img-agile">
+												<img src="./../assets/img/gp.png" class="img-responsive" alt="">
+											</div>
+											<h4>Ms.Pratiksha Shelar</h4>
+											<p class="text-deco">Truely problem solving and good quality workmanship in resonable price...since from last 20 years..</p>
+										</div>
+									</div>							
+								</div>
+			                 </div>                
+		                </ion-slide>    
 		                <ion-slide>    
 			                 <div class="home-slide">
 			                 	<div class="slide-css-test">
@@ -362,7 +422,7 @@
 												<img src="./../assets/img/profile.jpg" class="img-responsive" alt="">
 											</div>
 											<h4>And Many More......</h4>
-											<p class="text-deco">I got my house interior done with these people, and I can assure you that they dont compromise in their quality. Great finishing touch.</p>
+											<p class="text-deco">Quality work , quick response and friendly behaviour</p>
 										</div>
 									</div>							
 								</div>

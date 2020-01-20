@@ -8,9 +8,9 @@
 .header-item{color: #fff;}
 .slide-css{top:45px;width:100%;height:40vw;padding: 10vw;color:#fff;}
 .slide-css h3{color:#fff !important;}
-.back-img1{background-image: url("../img/b1.jpg");background-size: 100% 100%;}
-.back-img2{background-image: url("../img/b2.jpg");background-size: 100% 100%;}
-.back-img3{background-image: url("../img/b3.jpg");background-size: 100% 100%;}
+.back-img1{background-image: url("../img/construction_solutions-slide-2.jpg");background-size: 100% 100%;}
+.back-img2{background-image: url("../img/somt-marina-031.jpg");background-size: 100% 100%;}
+.back-img3{background-image: url("../img/395460_N318.jpg");background-size: 100% 100%;}
 .header{color:#fff !important;  font-family: "Times New Roman", Times, serif; text-align:center;font-size: 5vw;font-style: italic;border: 1px dotted;}
 .sub-header{color:#fff !important;  font-family: "Times New Roman", Times, serif; text-align:center;font-size: 2vw;}
 .bor-des{border: 1vw solid rgba(0, 0, 0, 0.69);position: absolute;margin: 0 5%;width: 70%;height: 25vw;top: 5vw;opacity: 0.7;z-index: 0;}
@@ -133,6 +133,56 @@ h3.title{text-align: center;text-transform: uppercase;}
 .tb-header{background:#ac2c35;font-weight: bold;color: antiquewhite;}
 .tb-body{color:#ac2c35;}
 .bar{height: 55px;}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
 @media only screen and (min-width:768px) and (max-width: 1024px) { 
     .img-scr div {width: calc(50% - 10px); margin: 5px auto; }
 }
@@ -165,5 +215,10 @@ h3.title{text-align: center;text-transform: uppercase;}
 .button{ font-size: 13px;}
 .sc-video{font-size: 5vw;}
 .modal-content{font-size: 5vw;}
-
+}
+@media only screen and (max-width: 770px){
+.slide-css-test{  padding: 2vw;}
+}
+@media only screen and (max-width: 361px){
+.slide-css-test{  padding: 1vw;}
 }
