@@ -182,11 +182,11 @@ angular.module('app')
 	        next.children(':first-child').clone().appendTo($(this));
 	      }
   });
-  $scope.openModal1 = function() {
+ /* $scope.openModal1 = function() {
     document.getElementById("myModal").style.display = "block";
-  }
+  }*/
 
-$scope.closeModal1 = function() {
+/*$scope.closeModal1 = function() {
   document.getElementById("myModal").style.display = "none";
 }
   
@@ -217,8 +217,8 @@ $scope.showSlides1 = function(n){
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-};
-$scope.showSlides1(slideIndex);
+};*/
+// $scope.showSlides1(slideIndex);
 })
 .controller('menuctlr', function($scope, $stateParams) {
    

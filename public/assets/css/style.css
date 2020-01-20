@@ -50,10 +50,10 @@
 .ch-info{position: absolute;width: 180px;height: 180px;border-radius: 50%;}
 .ch-info-wrap{width: 180px;height: 180px;margin-top: 20px; margin-left: 20px;background: #f9f9f9;box-shadow: 0 0 0 20px rgba(255,255,255,0.2), inset 0 0 3px rgba(115,114, 23, 0.8);border-radius: 50%;}
 .ch-info .ch-info-front{width: 180px;height: 180px;transition: all 0.6s ease-in-out;border-radius: 50%;background-size: 120%;}
-.ch-info .ch-info-back2 {width: 180px;height: 180px;border-radius: 50%;margin-top: -180px;opacity: 0; background: url(../img/owner2.jpg) no-repeat; background-position: center; pointer-events: none;transform: scale(1.5);transition: all 0.4s ease-in-out 0.2s;}
-.ch-info .ch-info-back1 {width: 180px;height: 180px;border-radius: 50%;margin-top: -180px;opacity: 0; background: url(../img/owner1.jpg) no-repeat; background-position: center; pointer-events: none;transform: scale(1.5);transition: all 0.4s ease-in-out 0.2s;}
-.owner_img{background: url(../img/owner1.jpg);background-position: center;background-repeat: repeat;background-size:100%;}
-.owner_img2{background: url(../img/owner2.jpg);background-position: center;background-repeat: repeat;background-size:100%;}
+.ch-info .ch-info-back2 {width: 180px;height: 180px;border-radius: 50%;margin-top: -180px;opacity: 0; background: url(../img/AtulJadhav1.jpg) no-repeat; background-position: center; pointer-events: none;transform: scale(1.5);transition: all 0.4s ease-in-out 0.2s;}
+.ch-info .ch-info-back1 {width: 180px;height: 180px;border-radius: 50%;margin-top: -180px;opacity: 0; background: url(../img/ashokJadhav1.jpg) no-repeat; background-position: center; pointer-events: none;transform: scale(1.5);transition: all 0.4s ease-in-out 0.2s;}
+.owner_img{background: url(../img/ashokJadhav.jpg);background-position: center;background-repeat: repeat;background-size:100%;}
+.owner_img2{background: url(../img/AtulJadhav.jpeg);background-position: center;background-repeat: repeat;background-size:100%;}
 ul.social-icons { padding: 132px 0 0;}
 .ch-item:hover .ch-info-back1, .ch-item:hover .ch-info-back2{transform: scale(1);opacity: 1;pointer-events: auto;}
 .ch-item:hover .ch-info-front {transform: scale(0);opacity: 0;}
@@ -62,7 +62,7 @@ ul.social-icons { padding: 132px 0 0;}
 
 /*gallery*/
 .gal-3{background-color: white;height:400px;}
-.gal-3 .title{padding: 20px;font-size: 40px; font-weight: bold;}
+.gal-3 .title{padding: 20px;}
 .carousel-inner .carousel-item.active,.carousel-inner .carousel-item-next,.carousel-inner .carousel-item-prev {display: flex;}
 .carousel-inner .carousel-item-right.active,.carousel-inner .carousel-item-next {transform: translateX(25%);}
 .carousel-inner .carousel-item-left.active,.carousel-inner .carousel-item-prev {transform: translateX(-25%);}  
@@ -133,55 +133,6 @@ h3.title{text-align: center;text-transform: uppercase;}
 .tb-header{background:#ac2c35;font-weight: bold;color: antiquewhite;}
 .tb-body{color:#ac2c35;}
 .bar{height: 55px;}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
 
 @media only screen and (min-width:768px) and (max-width: 1024px) { 
     .img-scr div {width: calc(50% - 10px); margin: 5px auto; }
