@@ -8,13 +8,13 @@
    <ion-content>
          <div class="modal-content-header">        
             <img src="../../assets/img/o-services.jpg" alt=" " class="img-responsive">   
-            <h5>  LIST OF SOME MAJOR JOBS CARRING BY US.</h5> 
+            <h5 style="color: #ac2c35;">  LIST OF SOME MAJOR JOBS CARRING BY US.</h5> 
             <table class="table-bordered container-fluid">
                <tr class="row">
-                  <th class="col col-25 tb-header">Name Of Society/Building With Location</th>
-                  <th class="col col-25 tb-header">Work Done</th>
-                  <th class="col col-25 tb-header">Year</th>
-                  <th class="col col-25 tb-header">Amount In Rupees</th>
+                  <th class="col col-40 tb-header">Name Of Society/Building With Location</th>
+                  <th class="col col-40 tb-header">Work Done</th>
+                  <th class="col col-20 tb-header">Year</th>
+                  <!-- <th class="col col-25 tb-header">Amount In Rupees</th> -->
                </tr>
            
                <!-- <tr>
@@ -24,14 +24,17 @@
                   <td>12,00,000/-</td>
                </tr> -->
                 <tr ng-repeat="item in recentProj" class="row">
-                  <td class="col col-25 tb-body">{{item.name}}</td>
-                  <td class="col col-25 tb-body">{{item.work}}</td>
-                  <td class="col col-25 tb-body">{{item.year}}</td>
-                  <td class="col col-25 tb-body">{{item.cost}}</td>
+                  <td class="col col-40 tb-body">{{item.name}}</td>
+                  <td class="col col-40 tb-body">{{item.work}}</td>
+                  <td class="col col-20 tb-body">{{item.year}}</td>
+                  <!-- <td class="col col-25 tb-body">{{item.cost}}</td> -->
                </tr>
-               <tr class="row"> <td class="col col-100 text-center tb-body"> Countless Minor Project Below Two Lakhs…</td></tr>
-
-          
+               <tr class="row"> 
+                  <td class="col col-100 text-center tb-body"> 
+                     <div style="font-size: 16px;color: blueviolet;padding: 10px">Our Customers Happiness Can’t be judge by money...</div>
+                  <div style="background: yellow;font-size: 18px;font-weight: bolder;margin-bottom: 10px;">Government License Holder Civil Contractors, Plumbers and RCC Building Designers.</div>
+               </td>
+               </tr>          
             </table>    
          </div>
    </ion-content>
