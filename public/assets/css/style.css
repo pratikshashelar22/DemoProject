@@ -105,12 +105,14 @@ h3.title{text-align: center;text-transform: uppercase;}
 .contact-agile h4 {color: #000;font-size: 22px;margin-bottom: 10px;}
 .contact-left p {text-align: left;font-size: 15px;margin-bottom: 17px;color: #f3cfcf;letter-spacing: 1px;}
 .bor-des2{border: 1vw solid rgba(0, 0, 0, 0.69);position: absolute;margin: 0 5%;width: 70%;height: 25vw;opacity: 0.7;z-index: 0;}
-.gal-1{background-color: white;height:auto;}
+.gal-1{background-color: white;height:auto;padding: 20px;}
 .img-scr{display:flex;flex-wrap: wrap;margin: 0 auto;}
 .img-scr div {width: calc(25% - 10px);margin: 5px auto;}
 .img-hover-zoom{height: 200px;overflow: hidden;}
 .img-hover-zoom img { transform-origin: 50% 65%;transition: transform 5s, filter 3s ease-in-out;filter: brightness(80%);}
 .img-hover-zoom:hover img {height: 200px;filter: brightness(100%);transform: scale(3);cursor: pointer;}
+.hover-img-text{position: relative;background:rgba(25, 24, 24, 0.8) !important;z-index: 1;color: white;width: 100% !important;bottom: 30px;visibility:hidden;opacity: 0;-webkit-transform: translate3d(0px, 0%, 0);-moz-transform: translate3d(0px, 0, 0);-o-transform: translate3d(0px, 0, 0);-ms-transform: translate3d(0px, 0, 0);transform: translate3d(0px, 0%, 0);transition: all .5s ease 0s;}
+.img-hover-zoom:hover .hover-img-text{visibility: visible;opacity: 1;}
 /*modal css*/
 .modal-view{border-radius:10px !important;overflow: scroll;}
 .modal-content{color: #000;text-align: center;font-size: 26px;margin-bottom: .5em;text-transform: uppercase;border: none;padding: 10px;}
@@ -133,7 +135,7 @@ h3.title{text-align: center;text-transform: uppercase;}
 .tb-header{background:#ac2c35;font-weight: bold;color: antiquewhite;}
 .tb-body{color:#ac2c35;}
 .bar{height: 55px;}
-
+h2.title{text-decoration: underline;}
 @media only screen and (min-width:768px) and (max-width: 1024px) { 
     .img-scr div {width: calc(50% - 10px); margin: 5px auto; }
 }
